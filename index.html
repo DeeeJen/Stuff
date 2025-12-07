@@ -25,7 +25,21 @@
             <br>
         <form>
             <label for="text">Choose a color:</label>
-                <input type="color" name="" id="">
+                <input type="color" id="colorPicker">
+                <button onclick="changeTextColor()">Change Text Color</button>
+                <button onclick="changeBackground()">Change Background</button>
+
+                <script>
+                function changeTextColor() {
+                    const color = document.getElementById("colorPicker").value;
+                    document.getElementById("text").style.color = color;
+                }
+                
+                function changeBackground() {
+                    const color = document.getElementById("colorPicker").value;
+                    document.body.style.backgroundColor = color;
+                }
+                </script>
 
             
             <p>this is an email box fill this box with thy email human<input type="email" name="" id=""></p>
@@ -47,4 +61,5 @@
     </div>
     
 </body>
+
 </html> 
